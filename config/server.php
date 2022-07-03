@@ -1,7 +1,7 @@
 <?php
 /*configuracion del servidor, GLOBAL, SISTEMA */
 const SERVER="localhost";
-const DB="dbveterinaria";
+const DB="sistemaveterinaria";
 const USER="root"; /*AQUI IRA EL USUARIO*/
 const PASS="";
 
