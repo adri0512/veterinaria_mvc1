@@ -4,4 +4,3 @@ RewriteEngine On
 Options All -Indexes
 #esto es una regla, que nos permite poner varios caracteres asi como lo muetsra desntro del ()
 RewriteRule ^([a-zA-Z0-9/ñÑ-]+)$ index.php?views=$1
-

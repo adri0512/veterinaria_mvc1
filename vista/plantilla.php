@@ -22,18 +22,21 @@
     <!-- Main container -->
     <main class="full-box main-container">
         <!-- Nav lateral -->
-        <?php include "./inc/NavLateral.php"; ?>
+        <?php include "./vista/inc/NavLateral.php"; ?>
 
         <!-- Page content -->
         <section class="full-box page-content">
             <?php
-             include "./inc/NavBar.php"; 
+             include "./vista/inc/NavBar.php"; 
+             include $vistas;
+
              ?>
         </section>
     </main>
     <?php
      }
      include "./vista/inc/Script.php";
+     
       ?>
 
 </body>

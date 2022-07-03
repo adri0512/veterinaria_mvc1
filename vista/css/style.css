@@ -27,25 +27,25 @@
 
 :root{
 	--color-one: #F5F5F5;
-	--color-two: #24292E;
+	--color-two: #5ff116;
 	--color-three: #EC5252;
 	/*--color-three: #0366D6;*/
 
-	--form-color: #14111A;
+	--form-color: #dc8b45;
 
 	--accent-color: #253556;
 	/*--accent-color: #455A64;*/
     --border-color: #D8D8D8;
 }
 
-body,html{
-	/*background-image: url("../assets/img/rsz_gatovisual.png");
-	*/
+body,html{ background-image: url("../assets/img/rsz_gatovisual.png");
+	
 	font-family: 'roboto_condensed_light';
 	background-position:auto ;
     background-attachment: fixed;
     background-size: contain;
-	font-size: 16px;
+	font-size: 25px;
+	/*color: #F5F5F5;*/
 
 }
 
@@ -187,14 +187,15 @@ table form{
 }
 /*----------  login Styles  ----------*/
 .login-container{
+	
+	
 	width: 100vw;
 	height: 100vh;
 	display: flex;
-	justify-content: center;
+	justify-content: left;
 	align-items: center;
-	background: #0575E6;
-	background: -webkit-linear-gradient(to right, #021B79, #0575E6);
-	background: linear-gradient(to right, #021B79, #0575E6);
+	background-image: url("../assets/img/perrito_contento.jpg");
+	background-size: contain;
 
 }
 .login-content{
@@ -202,7 +203,7 @@ table form{
 	max-width: 320px;
 	height: auto;
 	border: 1px solid var(--border-color);
-	background-color: #FFF;
+	background-color: #D8D8D8;
 	border-radius: 4px;
 	padding: 15px;
 	color: var(--accent-color);

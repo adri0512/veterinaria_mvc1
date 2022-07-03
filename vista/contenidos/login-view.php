@@ -3,8 +3,8 @@
         <p class="text-center">
             <i class="fas fa-user-circle fa-5x"></i>
         </p>
-        <p class="text-center">
-            Inicia sesión con tu cuenta
+        <p class="text-center"> ¡ BIENVENIDO! <h3>   INICIAR SESION</h3>
+         
         </p>
         <form action="" method="POST" autocomplete="off">
             <div class="form-group">
