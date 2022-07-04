@@ -37,7 +37,7 @@ class usuarioControlador extends usuarioModelo
 			}
 
             	/*== Verificando integridad de los datos ==*/
-			if(mainModelo::verificar_datos("[0-9-]{10,20}",$dni)){
+			if(mainModelo::verificar_datos("[0-9-]{10,20}",$dni)){ /*DEVUELVE LOS DATOS, SOLO NUMEROS */
 				$alerta=[
 					"Alerta"=>"simple",
 					"Titulo"=>"Ocurrió un error inesperado",
@@ -119,7 +119,8 @@ class usuarioControlador extends usuarioModelo
 			}
 
 			/*== Comprobando DNI ==*/
-			$check_dni=mainModelo::ejecutar_consulta_simple("SELECT usuario_dni FROM usuario WHERE usuario_dni='$dni'");
+			$check_dni=mainModelo::ejecutar_consulta_simple("SELECT usuario_dni FROM usuario
+			 WHERE usuario_dni='$dni'");
 			if($check_dni->rowCount()>0){
 				$alerta=[
 					"Alerta"=>"simple",
@@ -132,7 +133,8 @@ class usuarioControlador extends usuarioModelo
 			}
 
 			/*== Comprobando usuario ==*/
-			$check_user=mainModelo::ejecutar_consulta_simple("SELECT usuario_usuario FROM usuario WHERE usuario_usuario='$usuario'");
+			$check_user=mainModelo::ejecutar_consulta_simple("SELECT usuario_usuario FROM usuario 
+			WHERE usuario_usuario='$usuario'");
 			if($check_user->rowCount()>0){
 				$alerta=[
 					"Alerta"=>"simple",
@@ -147,7 +149,8 @@ class usuarioControlador extends usuarioModelo
 			/*== Comprobando email ==*/
 			if($email!=""){
 				if(filter_var($email,FILTER_VALIDATE_EMAIL)){
-					$check_email=mainModelo::ejecutar_consulta_simple("SELECT usuario_email FROM usuario WHERE usuario_email='$email'");
+					$check_email=mainModelo::ejecutar_consulta_simple("SELECT usuario_email
+					 FROM usuario WHERE usuario_email='$email'");
 					if($check_email->rowCount()>0){
 						$alerta=[
 							"Alerta"=>"simple",
@@ -169,8 +172,6 @@ class usuarioControlador extends usuarioModelo
 					exit();
 				}
 			}
-
-
 			/*== Comprobando claves ==*/
 			if($clave1!=$clave2){
 				$alerta=[
