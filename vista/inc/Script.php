@@ -22,3 +22,5 @@
  </script>
 
  <script src="<?php echo SERVERURL; ?>vista/js/main.js"></script>
+ <script src="<?php echo SERVERURL; ?>vista/js/alertas.js"></script>
+ 
